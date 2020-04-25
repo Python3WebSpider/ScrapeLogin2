@@ -19,6 +19,7 @@ time.sleep(10)
 # get cookies from selenium
 cookies = browser.get_cookies()
 print('Cookies', cookies)
+browser.close()
 
 # set cookies to requests
 session = requests.Session()

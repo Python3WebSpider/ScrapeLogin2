@@ -14,6 +14,9 @@ response_login = session.post(LOGIN_URL, data={
     'password': PASSWORD
 })
 
+cookies = session.cookies
+print('Cookies', cookies)
+
 response_index = session.get(INDEX_URL)
 print('Response Status', response_index.status_code)
 print('Response URL', response_index.url)
